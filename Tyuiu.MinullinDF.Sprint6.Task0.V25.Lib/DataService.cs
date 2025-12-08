@@ -5,7 +5,7 @@ namespace Tyuiu.MinullinDF.Sprint6.Task0.V25.Lib
     {
         public double Calculate(int x)
         {
-            return Math.Round(x/Math.Sqrt(Math.Pow(x, 2) + x), 3);
+            return Math.Round(x / Math.Sqrt(Math.Pow(x, 2) + x), 3);
         }
     }
 }
