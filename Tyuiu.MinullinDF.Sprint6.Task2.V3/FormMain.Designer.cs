@@ -1,4 +1,4 @@
-﻿namespace Tyuiu.MinullinDF.Sprint6.Task1.V7
+﻿namespace Tyuiu.MinullinDF.Sprint6.Task2.V3
 {
     partial class FormMain
     {
@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBoxOutput_MDF = new TextBox();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             groupBoxCondition_MDF = new GroupBox();
             pictureBox1 = new PictureBox();
             groupBoxOutput_MDF = new GroupBox();
+            chart_MDF = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            dataGridView_MDF = new DataGridView();
+            ColumnX_MDF = new DataGridViewTextBoxColumn();
+            ColumnFX_MDF = new DataGridViewTextBoxColumn();
             groupBoxInput_MDF = new GroupBox();
             labelEndValue_MDF = new Label();
             textBoxEndValue_MDF = new TextBox();
@@ -43,35 +49,26 @@
             groupBoxCondition_MDF.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBoxOutput_MDF.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)chart_MDF).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_MDF).BeginInit();
             groupBoxInput_MDF.SuspendLayout();
             groupBoxManagment_MDF.SuspendLayout();
             SuspendLayout();
             // 
-            // textBoxOutput_MDF
-            // 
-            textBoxOutput_MDF.Font = new Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxOutput_MDF.ImeMode = ImeMode.NoControl;
-            textBoxOutput_MDF.Location = new Point(6, 22);
-            textBoxOutput_MDF.Multiline = true;
-            textBoxOutput_MDF.Name = "textBoxOutput_MDF";
-            textBoxOutput_MDF.ReadOnly = true;
-            textBoxOutput_MDF.ScrollBars = ScrollBars.Vertical;
-            textBoxOutput_MDF.Size = new Size(305, 349);
-            textBoxOutput_MDF.TabIndex = 5;
-            // 
             // groupBoxCondition_MDF
             // 
             groupBoxCondition_MDF.Controls.Add(pictureBox1);
-            groupBoxCondition_MDF.Location = new Point(18, 11);
+            groupBoxCondition_MDF.Location = new Point(12, 37);
             groupBoxCondition_MDF.Name = "groupBoxCondition_MDF";
             groupBoxCondition_MDF.Size = new Size(453, 292);
-            groupBoxCondition_MDF.TabIndex = 8;
+            groupBoxCondition_MDF.TabIndex = 4;
             groupBoxCondition_MDF.TabStop = false;
             groupBoxCondition_MDF.Text = "Условие";
             // 
             // pictureBox1
             // 
             pictureBox1.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox1.Image = Properties.Resources.Task3_V3;
             pictureBox1.Location = new Point(6, 22);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(441, 264);
@@ -81,13 +78,54 @@
             // 
             // groupBoxOutput_MDF
             // 
-            groupBoxOutput_MDF.Controls.Add(textBoxOutput_MDF);
-            groupBoxOutput_MDF.Location = new Point(477, 11);
+            groupBoxOutput_MDF.Controls.Add(chart_MDF);
+            groupBoxOutput_MDF.Controls.Add(dataGridView_MDF);
+            groupBoxOutput_MDF.Location = new Point(471, 37);
             groupBoxOutput_MDF.Name = "groupBoxOutput_MDF";
-            groupBoxOutput_MDF.Size = new Size(317, 377);
-            groupBoxOutput_MDF.TabIndex = 9;
+            groupBoxOutput_MDF.Size = new Size(611, 377);
+            groupBoxOutput_MDF.TabIndex = 5;
             groupBoxOutput_MDF.TabStop = false;
             groupBoxOutput_MDF.Text = "Вывод данных";
+            // 
+            // chart_MDF
+            // 
+            chartArea5.Name = "ChartArea1";
+            chart_MDF.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            chart_MDF.Legends.Add(legend5);
+            chart_MDF.Location = new Point(127, 22);
+            chart_MDF.Name = "chart_MDF";
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series5.IsVisibleInLegend = false;
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            chart_MDF.Series.Add(series5);
+            chart_MDF.Size = new Size(478, 349);
+            chart_MDF.TabIndex = 1;
+            chart_MDF.Text = "chart1";
+            // 
+            // dataGridView_MDF
+            // 
+            dataGridView_MDF.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView_MDF.Columns.AddRange(new DataGridViewColumn[] { ColumnX_MDF, ColumnFX_MDF });
+            dataGridView_MDF.Location = new Point(6, 22);
+            dataGridView_MDF.Name = "dataGridView_MDF";
+            dataGridView_MDF.RowHeadersVisible = false;
+            dataGridView_MDF.Size = new Size(115, 349);
+            dataGridView_MDF.TabIndex = 0;
+            // 
+            // ColumnX_MDF
+            // 
+            ColumnX_MDF.HeaderText = "X";
+            ColumnX_MDF.Name = "ColumnX_MDF";
+            ColumnX_MDF.Width = 50;
+            // 
+            // ColumnFX_MDF
+            // 
+            ColumnFX_MDF.HeaderText = "f(X)";
+            ColumnFX_MDF.Name = "ColumnFX_MDF";
+            ColumnFX_MDF.Width = 50;
             // 
             // groupBoxInput_MDF
             // 
@@ -95,10 +133,10 @@
             groupBoxInput_MDF.Controls.Add(textBoxEndValue_MDF);
             groupBoxInput_MDF.Controls.Add(textBoxStartValue_MDF);
             groupBoxInput_MDF.Controls.Add(labelStartValue_MDF);
-            groupBoxInput_MDF.Location = new Point(18, 310);
+            groupBoxInput_MDF.Location = new Point(12, 336);
             groupBoxInput_MDF.Name = "groupBoxInput_MDF";
             groupBoxInput_MDF.Size = new Size(280, 78);
-            groupBoxInput_MDF.TabIndex = 10;
+            groupBoxInput_MDF.TabIndex = 6;
             groupBoxInput_MDF.TabStop = false;
             groupBoxInput_MDF.Text = "Ввод данных";
             // 
@@ -138,10 +176,10 @@
             // 
             groupBoxManagment_MDF.Controls.Add(buttonDone_MDF);
             groupBoxManagment_MDF.Controls.Add(buttonInfo_MDF);
-            groupBoxManagment_MDF.Location = new Point(305, 310);
+            groupBoxManagment_MDF.Location = new Point(299, 336);
             groupBoxManagment_MDF.Name = "groupBoxManagment_MDF";
             groupBoxManagment_MDF.Size = new Size(167, 78);
-            groupBoxManagment_MDF.TabIndex = 11;
+            groupBoxManagment_MDF.TabIndex = 7;
             groupBoxManagment_MDF.TabStop = false;
             groupBoxManagment_MDF.Text = "Управление";
             // 
@@ -154,6 +192,10 @@
             buttonDone_MDF.TabIndex = 1;
             buttonDone_MDF.Text = "Выполнить";
             buttonDone_MDF.UseVisualStyleBackColor = false;
+            buttonDone_MDF.Click += buttonDone_MDF_Click;
+            buttonDone_MDF.MouseDown += buttonDone_MDF_MouseDown;
+            buttonDone_MDF.MouseEnter += buttonDone_MDF_MouseEnter;
+            buttonDone_MDF.MouseLeave += buttonDone_MDF_MouseLeave;
             // 
             // buttonInfo_MDF
             // 
@@ -164,25 +206,24 @@
             buttonInfo_MDF.TabIndex = 0;
             buttonInfo_MDF.Text = "Справка";
             buttonInfo_MDF.UseVisualStyleBackColor = false;
+            buttonInfo_MDF.Click += buttonInfo_MDF_Click;
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(813, 399);
+            ClientSize = new Size(1094, 450);
             Controls.Add(groupBoxCondition_MDF);
             Controls.Add(groupBoxOutput_MDF);
             Controls.Add(groupBoxInput_MDF);
             Controls.Add(groupBoxManagment_MDF);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
-            MaximizeBox = false;
-            MinimizeBox = false;
             Name = "FormMain";
-            Text = "Спринт 6 | Таск 1 | Вариант 7 | Минуллин Д.Ф.";
+            Text = "Спринт 6 | Таск 2 | Вариант 3 | Минуллин Д.Ф.";
             groupBoxCondition_MDF.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBoxOutput_MDF.ResumeLayout(false);
-            groupBoxOutput_MDF.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)chart_MDF).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_MDF).EndInit();
             groupBoxInput_MDF.ResumeLayout(false);
             groupBoxInput_MDF.PerformLayout();
             groupBoxManagment_MDF.ResumeLayout(false);
@@ -191,7 +232,6 @@
 
         #endregion
 
-        private TextBox textBoxOutput_MDF;
         private GroupBox groupBoxCondition_MDF;
         private PictureBox pictureBox1;
         private GroupBox groupBoxOutput_MDF;
@@ -203,5 +243,9 @@
         private GroupBox groupBoxManagment_MDF;
         private Button buttonDone_MDF;
         private Button buttonInfo_MDF;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_MDF;
+        private DataGridView dataGridView_MDF;
+        private DataGridViewTextBoxColumn ColumnX_MDF;
+        private DataGridViewTextBoxColumn ColumnFX_MDF;
     }
 }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tyuiu.MinullinDF.Sprint6.Task1.V7.Properties {
+namespace Tyuiu.MinullinDF.Sprint6.Task2.V3.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Tyuiu.MinullinDF.Sprint6.Task1.V7.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tyuiu.MinullinDF.Sprint6.Task1.V7.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tyuiu.MinullinDF.Sprint6.Task2.V3.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,16 +57,6 @@ namespace Tyuiu.MinullinDF.Sprint6.Task1.V7.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Task1_V7 {
-            get {
-                object obj = ResourceManager.GetObject("Task1.V7", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
