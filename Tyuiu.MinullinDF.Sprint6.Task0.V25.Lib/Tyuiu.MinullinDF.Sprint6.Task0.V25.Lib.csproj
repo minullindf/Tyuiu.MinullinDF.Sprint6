@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="tyuiu.cources.programming.interfaces">
+    <Reference Include="tyuiu.cources.programming.interfaces.Sprint6">
       <HintPath>..\..\Tyuiu.MinullinDF.Sprint6\tyuiu.cources.programming.interfaces.dll</HintPath>
     </Reference>
   </ItemGroup>
