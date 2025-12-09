@@ -9,7 +9,6 @@ namespace Tyuiu.MinullinDF.Sprint6.Task5.V12.Lib
         public int len = 0;
         public double[] LoadFromDataFile(string path)
         {
-            CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
