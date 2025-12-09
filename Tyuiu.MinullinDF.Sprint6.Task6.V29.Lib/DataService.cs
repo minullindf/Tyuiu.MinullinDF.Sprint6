@@ -22,7 +22,7 @@ namespace Tyuiu.MinullinDF.Sprint6.Task6.V29.Lib
 
                 }
             }
-            return resStr;
+            return resStr.Trim();
         }
     }
 }
