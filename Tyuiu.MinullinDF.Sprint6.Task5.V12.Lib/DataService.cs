@@ -29,7 +29,7 @@ namespace Tyuiu.MinullinDF.Sprint6.Task5.V12.Lib
                     index++;
                 }
             }
-            numsArray = numsArray.Where(val => val < 0).ToArray();
+            numsArray = numsArray.Where(val => val % 5 != 0).ToArray();
             return numsArray;
         }
     }
