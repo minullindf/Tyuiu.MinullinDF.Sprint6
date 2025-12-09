@@ -193,7 +193,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Спринт 6 | Таск 6 | Вариант 14 | Солиев А.Х.";
+            Text = "Спринт 6 | Таск 6 | Вариант 29 | Минуллин Д.Ф.";
             panelTopSide_MDF.ResumeLayout(false);
             panelOsnova_MDF.ResumeLayout(false);
             groupBoxOutput_MDF.ResumeLayout(false);
