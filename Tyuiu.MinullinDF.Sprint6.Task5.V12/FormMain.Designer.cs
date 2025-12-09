@@ -63,14 +63,14 @@
             panelTopSide_MDF.Location = new Point(0, 0);
             panelTopSide_MDF.Margin = new Padding(4, 3, 4, 3);
             panelTopSide_MDF.Name = "panelTopSide_MDF";
-            panelTopSide_MDF.Size = new Size(1022, 115);
+            panelTopSide_MDF.Size = new Size(1036, 115);
             panelTopSide_MDF.TabIndex = 0;
             // 
             // buttonDone_MDF
             // 
             buttonDone_MDF.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonDone_MDF.BackColor = Color.Green;
-            buttonDone_MDF.Location = new Point(697, 29);
+            buttonDone_MDF.Location = new Point(711, 29);
             buttonDone_MDF.Margin = new Padding(4, 3, 4, 3);
             buttonDone_MDF.Name = "buttonDone_MDF";
             buttonDone_MDF.Size = new Size(99, 65);
@@ -83,7 +83,7 @@
             // 
             buttonOpenF_MDF.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonOpenF_MDF.BackColor = Color.RoyalBlue;
-            buttonOpenF_MDF.Location = new Point(803, 29);
+            buttonOpenF_MDF.Location = new Point(817, 29);
             buttonOpenF_MDF.Margin = new Padding(4, 3, 4, 3);
             buttonOpenF_MDF.Name = "buttonOpenF_MDF";
             buttonOpenF_MDF.Size = new Size(99, 65);
@@ -96,7 +96,7 @@
             // 
             buttonHelp_MDF.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonHelp_MDF.BackColor = SystemColors.MenuHighlight;
-            buttonHelp_MDF.Location = new Point(910, 29);
+            buttonHelp_MDF.Location = new Point(924, 29);
             buttonHelp_MDF.Margin = new Padding(4, 3, 4, 3);
             buttonHelp_MDF.Name = "buttonHelp_MDF";
             buttonHelp_MDF.Size = new Size(98, 65);
@@ -171,7 +171,7 @@
             panelFill_MDF.Margin = new Padding(4, 3, 4, 3);
             panelFill_MDF.Name = "panelFill_MDF";
             panelFill_MDF.Padding = new Padding(10);
-            panelFill_MDF.Size = new Size(864, 513);
+            panelFill_MDF.Size = new Size(878, 513);
             panelFill_MDF.TabIndex = 2;
             // 
             // chartFunction_MDF
@@ -189,7 +189,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             chartFunction_MDF.Series.Add(series1);
-            chartFunction_MDF.Size = new Size(832, 493);
+            chartFunction_MDF.Size = new Size(846, 493);
             chartFunction_MDF.TabIndex = 1;
             chartFunction_MDF.Text = "chartFunc_MDF";
             // 
@@ -206,7 +206,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1022, 628);
+            ClientSize = new Size(1036, 628);
             Controls.Add(panelFill_MDF);
             Controls.Add(panelLeftSide_MDF);
             Controls.Add(panelTopSide_MDF);
