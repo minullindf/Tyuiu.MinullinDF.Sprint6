@@ -12,8 +12,8 @@ namespace Tyuiu.MinullinDF.Sprint6.Task5.V12.Lib
             CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
             using (StreamReader reader = new StreamReader(path))
             {
-                string[] line = reader.ReadLine().Split(' ');
-                for (int i = 0; i < line.Length; i++) 
+                string line;
+                while ((line = reader.ReadLine()) != null)
                 {
                     len++;
                 }
@@ -24,15 +24,10 @@ namespace Tyuiu.MinullinDF.Sprint6.Task5.V12.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-                string[] nums;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    nums = line.Split(' ');
-                    for (int i = 0; i < nums.Length; i++) 
-                    {
-                        numsArray[index] = Convert.ToDouble(nums[i]);
-                        index++;
-                    }
+                    numsArray[index] = Convert.ToDouble(line);
+                    index++;
                 }
             }
             numsArray = numsArray.Where(val => val < 0).ToArray();
